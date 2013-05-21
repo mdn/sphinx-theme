@@ -1,42 +1,49 @@
-<!DOCTYPE html>
-<html lang="en-US" dir="ltr" id="developer-mozilla-org" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#">
-<head>
-    <title>{{ title }} | MDN</title>
-  
-  <meta charset="utf-8">
-  <meta name="robots" content="index, follow">
-  <link rel="shortcut icon" href="https://developer.cdn.mozilla.net/media/img/favicon.ico">
+{% extends "basic/layout.html" %}
 
-        <!--[if !IE 6]><!-->
-  <link rel="stylesheet" media="screen,projection,tv" href="https://developer.cdn.mozilla.net/media/css/mdn-min.css?build=fa4a2d1" />
-      <link rel="stylesheet" media="screen,projection,tv" href="https://developer.cdn.mozilla.net/media/css/wiki-min.css?build=fa4a2d1" />
+{# hide basic layout elements that aren't used here #}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+
+{% block extrahead %}
+    <meta charset="utf-8">
+    <meta name="robots" content="index, follow">
+    <link rel="shortcut icon" href="https://developer.cdn.mozilla.net/media/img/favicon.ico">
+
+    <!--[if !IE 6]><!-->
+    <link rel="stylesheet" media="screen,projection,tv" href="https://developer.cdn.mozilla.net/media/css/mdn-min.css?build=fa4a2d1" />
+    <link rel="stylesheet" media="screen,projection,tv" href="https://developer.cdn.mozilla.net/media/css/wiki-min.css?build=fa4a2d1" />
     <!--<![endif]-->
-  <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie.css"><![endif]-->
-  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie7.css"><![endif]-->
-  <!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie6.css"><![endif]-->
-  <link rel="stylesheet" type="text/css" media="print" href="https://developer.cdn.mozilla.net/media/css/mdn-print.css">
-  <link rel="stylesheet" href="//www.mozilla.org/tabzilla/media/css/tabzilla.css">
+    <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie.css"><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie7.css"><![endif]-->
+    <!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="https://developer.cdn.mozilla.net/media/css/mdn-ie6.css"><![endif]-->
+    <link rel="stylesheet" type="text/css" media="print" href="https://developer.cdn.mozilla.net/media/css/mdn-print.css">
+    <link rel="stylesheet" href="//www.mozilla.org/tabzilla/media/css/tabzilla.css">
 
-  <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network" />
+    <link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/en-US/search/xml" title="Mozilla Developer Network" />
 
-  
     <link rel="stylesheet" media="print" href="https://developer.cdn.mozilla.net/media/css/wiki-print-min.css?build=fa4a2d1" />
-          <link rel="stylesheet" type="text/css"
-            href="/en-US/docs/Template:CustomCSS?raw=1" />
-    
-  <!--[if IE]>
-  <meta http-equiv="imagetoolbar" content="no">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <script src="https://developer.cdn.mozilla.net/media/js/html5.js"></script>
-  <![endif]-->
+    <link rel="stylesheet" type="text/css"
+    href="/en-US/docs/Template:CustomCSS?raw=1" />
 
-</head>
+    <!--[if IE]>
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script src="https://developer.cdn.mozilla.net/media/js/html5.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        @font-face{
+            font-family:"Bebas Neue";
+            src:url('_static/fonts/BebasNeue-webfont.eot');
+            src:url('_static/fonts/BebasNeue-webfont.eot?') format('eot'),url('_static/fonts/BebasNeue-webfont.woff') format('woff'),url('_static/fonts/BebasNeue-webfont.ttf') format('truetype');
+            font-weight:normal;
+            font-style:normal;
+        }
+    </style>
+{% endblock %}
 
-<body id="" class="html-ltr document" role="document">
-<!--[if lte IE 8]>
-<noscript><div class="global-notice">
-<p><strong>Warning:</strong> The Mozilla Developer Network website employs emerging web standards that may not be fully supported in some versions of Microsoft Internet Explorer. You can improve your experience of this website by enabling JavaScript.</p></div></noscript>
-<![endif]-->
+{%- block document %}
   <header id="masthead" class="minor new-menu">
     <div class="wrap">
       <ul id="nav-access">
@@ -45,7 +52,7 @@
       </ul>
     
       <div id="branding">
-                <div id="logo"><a href="/en-US/"><img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="Mozilla Developer Network" title="Mozilla Developer Network" width="62" height="71"> Mozilla Developer Network</a></div>
+                <div id="logo"><a href="https://developer.mozilla.org/"><img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="Mozilla Developer Network" title="Mozilla Developer Network" width="62" height="71"> Mozilla Developer Network</a></div>
               </div>
       
               <nav id="nav">
@@ -56,23 +63,23 @@
                   <li>
                     <ul>
 
-                      <li><a href="/en-US/docs/Web/HTML?menu">HTML</a></li>
-                      <li><a href="/en-US/docs/Web/CSS?menu">CSS</a></li>
-                      <li><a href="/en-US/docs/JavaScript?menu">JavaScript</a></li>
-                      <li><a href="/en-US/docs/Web/Guide/Graphics?menu">Graphics</a></li>
-                      <li><a href="/en-US/docs/Web/API?menu">APIs / DOM</a></li>
-                      <li><a href="/en-US/docs/Web/Apps?menu">Apps</a></li>
-                      <li><a href="/en-US/docs/tools?menu">Dev Tools</a></li>
-                      <li><a href="/en-US/docs/Web/MathML?menu">MathML</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/HTML?menu">HTML</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/CSS?menu">CSS</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/JavaScript?menu">JavaScript</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/Guide/Graphics?menu">Graphics</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/API?menu">APIs / DOM</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/Apps?menu">Apps</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/tools?menu">Dev Tools</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/MathML?menu">MathML</a></li>
                     </ul>
                   </li>
                   <li>
                     <ul>
-                      <li><a href="/en-US/docs/Web/Tutorials?menu">Tutorials</a></li>
-                      <li><a href="/en-US/docs/Web/Reference?menu">References</a></li>
-                      <li><a href="/en-US/docs/Web/Guide?menu">Developer Guides</a></li>
-                      <li><a href="/en-US/demos/?menu">Demos</a></li>
-                      <li><br /><br /><a href="/en-US/docs?menu">...more docs</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/Tutorials?menu">Tutorials</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/Reference?menu">References</a></li>
+                      <li><a href="https://developer.mozilla.org/docs/Web/Guide?menu">Developer Guides</a></li>
+                      <li><a href="https://developer.mozilla.org/demos/?menu">Demos</a></li>
+                      <li><br /><br /><a href="https://developer.mozilla.org/docs?menu">...more docs</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -81,45 +88,27 @@
             <li id="nav-main-apps" role="menuitem"><a href="https://marketplace.firefox.com/developers/">Make<br /><em>Apps</em></a></li>
             <li id="nav-main-firefox" class="menu" role="menuitem"><a href="#nav-sub-firefox" class="firefox toggle" aria-haspopup="true" aria-labelledby="nav-main-firefox">Build & Use<br /><em>Firefox</em></a>
               <ul id="nav-sub-firefox" class="sub-menu">
-                <li><a href="/en-US/docs/Mozilla/Firefox_OS?menu">Firefox OS</a></li>
-                <li><a href="/en-US/docs/Mozilla/Firefox?menu">Firefox Desktop</a></li>
-                <li><a href="/en-US/docs/Mozilla/Mobile?menu">Mobile</a></li>
-                <li><a href="/en-US/docs/Mozilla/Add-ons?menu">Add-ons</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Mozilla/Firefox_OS?menu">Firefox OS</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Mozilla/Firefox?menu">Firefox Desktop</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Mozilla/Mobile?menu">Mobile</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Mozilla/Add-ons?menu">Add-ons</a></li>
               </ul>
             </li>
-            <li id="nav-main-demos" role="menuitem"><a href="/en-US/demos/?menu" class="demos">See & Submit<br /><em>Demos</em></a></li>
+            <li id="nav-main-demos" role="menuitem"><a href="https://developer.mozilla.org/demos/?menu" class="demos">See & Submit<br /><em>Demos</em></a></li>
             <li id="nav-main-community" class="menu" role="menuitem"><a href="#nav-sub-community" class="community toggle" aria-haspopup="true" aria-labelledby="nav-main-community">Get<br /><em>Involved</em></a>
               <ul id="nav-sub-community" class="sub-menu">
-                <li><a href="/en-US/docs/Project:MDN/Contributing/Join_the_community?menu">Join the Community</a></li>
-                <li><a href="/en-US/docs/Project:MDN/Contributing?menu">Contribute to MDN</a></li>
-                <li><a href="/en-US/events?menu">Events</a></li>
-                <li><a href="/en-US/docs/Project:MDN/Contributing/Follow_what_s_happening?menu">Tweets, Blogs, and More</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Project:MDN/Contributing/Join_the_community?menu">Join the Community</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Project:MDN/Contributing?menu">Contribute to MDN</a></li>
+                <li><a href="https://developer.mozilla.org/events?menu">Events</a></li>
+                <li><a href="https://developer.mozilla.org/docs/Project:MDN/Contributing/Follow_what_s_happening?menu">Tweets, Blogs, and More</a></li>
               </ul>
             </li>
           </ul>
         </nav>
 
-          
-        <ul class="user-state">
-          <li><a href="/en-US/profiles/lmorchard">lmorchard</a></li>
-      <li><a href="/en-US/users/logout?next=/en-US/docs/JavaScript/Reference">Sign out</a></li>
-  </ul>
-      
-      <form id="site-search" method="get" action="http://www.google.com/search"
-              data-url="/en-US/search">
-        <p>
-          <input type="search" role="search" placeholder="Search MDN" id="q" name="q" value="">
-          <noscript><button type="submit">Search</button></noscript>
-        </p>
-        <input type="hidden" name="sitesearch" value="developer.mozilla.org">
-                <div id="site-search-gg"></div>
-              </form>
-
       <a href="http://www.mozilla.org/" id="tabzilla">mozilla</a>
     </div>
   </header>
-
-    
 
 <!-- top toolbar -->
 <section id="nav-toolbar"><div><div class="wrap">
@@ -127,7 +116,7 @@
   <!-- left crumb navigation -->
   <nav class="crumbs" role="navigation">
     <ol>
-        <li class="crumb"><a href="/">{{ docstitle }}</a></li>
+        <li class="crumb"><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></li>
         <li class="crumb">{{ title }}</li>
     </ol>
   </nav>
@@ -138,20 +127,18 @@
         <div id="content-main" class="full">
             <article class="article" role="main">
                 {#
-                <header id="article-head">
-                    <div class="title">
-                        <h1 class="page-title">{{ title }}</h1>
-                    </div>
-                </header>
+                <header id="article-head"><div class="title">
+                    <h1 class="page-title">{{ title }}</h1>
+                </div></header>
                 #}
                 <div id="wikiArticle" class="page-content boxed">
                     <div id="article-nav">
                       <div class="page-toc">
                         <h2>Table of Contents</h2>
-                        {{ toc }}
+                        {{ toctree(collapse=False) }}
                       </div>
                     </div>
-                    {% block body %} {% endblock %}
+                    {% block body %}{% endblock %}
                 </div>
             </article>
         </div>
@@ -161,28 +148,28 @@
 <section id="footbar">
 <div class="wrap">
   <p>
-  Is MDN helpful to you? Please <a href="/en-US/docs/Project:Feedback">share your feedback</a> with us. Or join our <a id="dev-mdc-link" href="https://lists.mozilla.org/listinfo/dev-mdc">mailing list about improving MDN content</a>.  </p>
+  Is MDN helpful to you? Please <a href="https://developer.mozilla.org/docs/Project:Feedback">share your feedback</a> with us. Or join our <a id="dev-mdc-link" href="https://lists.mozilla.org/listinfo/dev-mdc">mailing list about improving MDN content</a>.  </p>
 </div>
 </section>
-<footer id="site-info" class="footer" role="contentinfo">
-<div class="wrap">
-    <div id="legal">
-      <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-tiny.png" alt="" width="42" height="48">
-      <p id="copyright">&copy; 2005 - 2013 Mozilla Developer Network and individual contributors</p>
-      <p>
-      Content is available under <a href="/en-US/docs/Project:Copyrights">these licenses</a>      &bull; <a href="/en-US/docs/Project:About">About MDN</a>
-      &bull; <a href="https://github.com/mozilla/kuma/">Contribute to the code</a>
-      &bull; <a href="http://www.mozilla.org/en-US/privacy">Privacy Policy</a>
-    </div>
-  </div>
-</footer>
+{%- endblock %}
 
-<script src="/en-US/jsi18n/build:fa4a2d1"></script>
-  <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js" async></script>
-  <script src="//www.google.com/jsapi" type="text/javascript"></script>
-  <script src="https://developer.cdn.mozilla.net/media/js/mdn-min.js?build=fa4a2d1"></script>
-      <script src="https://developer.cdn.mozilla.net/media/js/wiki-min.js?build=fa4a2d1"></script>
-  <link rel="stylesheet" media="screen,projection,tv" href="https://developer.cdn.mozilla.net/media/css/syntax-highlighter-min.css?build=fa4a2d1" />
-  <script src="https://developer.cdn.mozilla.net/media/js/syntax-highlighter-min.js?build=fa4a2d1"></script>
-</body>
-</html>
+{% block footer %}
+    <footer id="site-info" class="footer" role="contentinfo">
+      <div class="wrap">
+        <div id="legal">
+          <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-tiny.png" alt="" width="42" height="48">
+          <p id="copyright">&copy; 2005 - 2013 Mozilla Developer Network and individual contributors</p>
+          <p>
+          Content is available under <a href="/en-US/docs/Project:Copyrights">these licenses</a>      &bull; <a href="/en-US/docs/Project:About">About MDN</a>
+          &bull; <a href="https://github.com/mozilla/kuma/">Contribute to the code</a>
+          &bull; <a href="http://www.mozilla.org/en-US/privacy">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/en-US/jsi18n/build:fa4a2d1"></script>
+    <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js" async></script>
+    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+    <script src="https://developer.cdn.mozilla.net/media/js/mdn-min.js?build=fa4a2d1"></script>
+    <script src="https://developer.cdn.mozilla.net/media/js/wiki-min.js?build=fa4a2d1"></script>
+{% endblock %}
