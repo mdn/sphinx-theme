@@ -10,7 +10,7 @@ Here is how I use it
 To use it, you need to clone it somewhere in your Sphinx's architecture::
 
     $ cd docs/source && mkdir _themes
-    $ git clone https://github.com/ametaireau/mozilla-sphinx-theme.git _themes/mozilla-mdn
+    $ git clone https://github.com/lmorchard/mozilla-mdn-sphinx-theme.git _themes/mozilla-mdn
 
 and to configure Sphinx to use it. In your `conf.py` file::
 
