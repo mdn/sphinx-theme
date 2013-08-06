@@ -1,0 +1,2 @@
+include README.rst mdn_theme/mdn/layout.html mdn_theme/mdn/theme.conf
+recursive-include mdn_theme/mdn/static *
