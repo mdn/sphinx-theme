@@ -1,29 +1,32 @@
 <!DOCTYPE html><html dir="ltr" id="developer-mozilla-org" lang="en-US" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://ogp.me/ns#"><head>
     <title>Mozilla Developer Network</title>
-  
+
   <meta charset="utf-8">
   <meta content="index, follow" name="robots">
   <link href="https://developer.mozilla.org/" rel="home"></link>
   <link href="https://developer.mozilla.org/#copyright" rel="copyright"></link>
   <link href="https://developer.mozilla.org/media/img/favicon.ico" rel="shortcut icon"></link>
 
-    <!--[if !IE 6]><!-->
-  <link href="https://developer.mozilla.org/media/css/fonts.css" media="screen,projection,tv" rel="stylesheet"></link>
+          <!--[if !IE 6]><!-->
+      <link href="https://developer.mozilla.org/media/css/fonts.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/mdn-screen.css" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/css/modals.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/video-player.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/mdn-calendar.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/redesign-transition.css" media="screen,projection,tv" rel="stylesheet"></link>
-    <!--<![endif]-->
-  <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie.css"><![endif]-->
-  <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie7.css"><![endif]-->
-  <!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie6.css"><![endif]-->
-  <link href="https://developer.mozilla.org/media/css/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"></link>
-  <link href="https://developer.mozilla.org/media/css/mdn-print.css" media="print" rel="stylesheet" type="text/css"></link>
-  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet"></link>
+            <!--<![endif]-->
+      <!--[if IE]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie.css" /><![endif]-->
+      <!--[if lte IE 7]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie7.css" /><![endif]-->
+      <!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="all" href="/media/css/ie6.css" /><![endif]-->
+      <link href="https://developer.mozilla.org/media/css/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"></link>
+      <link href="https://developer.mozilla.org/media/css/mdn-print.css" media="print" rel="stylesheet" type="text/css"></link>
+      <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet"></link>
+
+      <link href="https://developer-local.allizom.org/en-US/search/xml" rel="search" title="Mozilla Developer Network" type="application/opensearchdescription+xml"></link>
+
+
+      
   
-  <link href="https://developer-local.allizom.org/en-US/search/xml" rel="search" title="Mozilla Developer Network" type="application/opensearchdescription+xml"></link>
-  
+
   <!--[if IE]>
   <meta http-equiv="imagetoolbar" content="no">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -31,25 +34,24 @@
   <![endif]-->
 
   <script type="text/javascript">
-    // This represents the site configuration
-    // TODO:  Move this to its own module when we're AMD-ready
-    window.mdn = {
-      build: 'dev',
-      // Setting these objects up for later use
-      ckeditor: {},
-      mediaPath: '/media/',
-      wiki: {
-        autosuggestTitleUrl: '/docs/get-documents'
-      }
-    };
-  </script>
-
+  // This represents the site configuration
+  window.mdn = {
+    build: 'e8ce54a',
+    ckeditor: {},
+    mediaPath: '/media/',
+    wiki: {
+      autosuggestTitleUrl: '/docs/get-documents'
+    }
+  };
+  // Ensures gettext always returns something, is always set
+  window.gettext = function(x) { return x; }
+</script>
       <link href="https://developer.mozilla.org/media/css/wiki.css" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/css/modals.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/wiki-screen.css" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/css/jqueryui/jqueryui.css" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/css/jqueryui/jquery-ui-1.8.14.custom.css" media="screen,projection,tv" rel="stylesheet"></link>
+<link href="https://developer.mozilla.org/media/js/libs/jquery-ui-1.10.3.custom/css/ui-lightness/jquery-ui-1.10.3.custom.min.css" media="screen,projection,tv" rel="stylesheet"></link>
 <link href="https://developer.mozilla.org/media/css/jqueryui/moz-jquery-plugins.css" media="screen,projection,tv" rel="stylesheet"></link>
+<link href="https://developer.mozilla.org/media/css/sphinx.css" media="screen,projection,tv" rel="stylesheet"></link>
+
 
   </head>
 
@@ -64,11 +66,11 @@
         <li><a href="https://developer.mozilla.org/#language">Select language</a></li>
                 <li><a href="https://developer.mozilla.org/#content">Skip to main content</a></li>
       </ul>
-    
+
       <div id="branding">
                 <div id="logo"><a href="https://developer.mozilla.org/"><img alt="Mozilla Developer Network" height="71" src="https://developer.mozilla.org/media/img/mdn-logo-sm.png" title="Mozilla Developer Network" width="62"></img> Mozilla Developer Network</a></div>
               </div>
-      
+
               <nav id="nav">
           <ul id="nav-main" role="menubar">
             <li class="menu" id="nav-main-docs" rel="menuitem"><a aria-haspopup="true" aria-labelledby="nav-main-docs" class="toggle" href="https://developer.mozilla.org/#nav-sub-docs" title="Read Documentation">Read<br><em>Docs</em></a>
@@ -122,7 +124,7 @@
           </ul>
         </nav>
 
-            
+      
       
       <a href="//www.mozilla.org/" id="tabzilla">mozilla</a>
     </div>
@@ -130,36 +132,39 @@
 
     
 
-<!-- top toolbar -->
-<section id="nav-toolbar"><div><div class="wrap">
-  
-  <!-- left crumb navigation -->
-  <nav class="crumbs" role="navigation">
-    <ol>
-        <li class="crumb"><a href="https://developer.mozilla.org/{{ pathto(master_doc) }}">{{ docstitle }}</a></li>
-        <li class="crumb">{{ title }}</li>
-    </ol>
-  </nav>
-  
-</div></div></section>
 
-<section id="content">
-    <div class="wrap">
-        <div class="full" id="content-main">
-            <article class="article" role="main">
-                                <div class="page-content boxed" id="wikiArticle">
-                    <div id="article-nav">
-                      <div class="page-toc">
-                        <h2>Table of Contents</h2>
-                        {{ toctree(collapse=False) }}
+  <!-- top toolbar -->
+  <section id="nav-toolbar"><div><div class="wrap">
+
+    <!-- left crumb navigation -->
+    <nav class="crumbs" role="navigation">
+      <ol>
+          <li class="crumb"><a href="https://developer.mozilla.org/{{ pathto(master_doc) }}">{{ docstitle }}</a></li>
+          <li class="crumb">{{ title }}</li>
+      </ol>
+    </nav>
+
+  </div></div></section>
+
+  <section id="content">
+      <div class="wrap">
+          <div class="full" id="content-main">
+              <article class="article" role="main">
+                                    <div class="page-content boxed" id="wikiArticle">
+                      <div id="article-nav">
+                        <div class="page-toc">
+                          <h2>Table of Contents</h2>
+                          {{ toctree(collapse=False) }}
+                        </div>
                       </div>
-                    </div>
-                    {% block body %}{% endblock %}
-                </div>
-            </article>
-        </div>
-    </div>
-</section>
+                      {% block body %}{% endblock %}
+                  </div>
+              </article>
+          </div>
+      </div>
+  </section>
+
+
 
 
 <section id="footbar">
@@ -181,35 +186,39 @@
     </div>
 </footer>
 
-<script src="https://developer.mozilla.org/jsi18n/build:dev"></script>
-  <script async src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
-  <script src="//www.google.com/jsapi" type="text/javascript"></script>
-  <script src="https://login.persona.org/include.js" type="text/javascript"></script>
-  <script src="https://developer.mozilla.org/media/js/libs/jquery-1.9.1.js"></script>
+<script src="https://developer.mozilla.org/jsi18n/build:e8ce54a"></script>
+
+        <script async src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
+      <script src="//www.google.com/jsapi" type="text/javascript"></script>
+      <script src="https://login.persona.org/include.js" type="text/javascript"></script>
+
+      
+      <script src="https://developer.mozilla.org/media/js/libs/jquery-1.9.1.js"></script>
 <script src="https://developer.mozilla.org/media/js/jquery-upgrade-compat.js"></script>
 <script src="https://developer.mozilla.org/media/js/init.js"></script>
 <script src="https://developer.mozilla.org/media/js/gsearch.js"></script>
 <script src="https://developer.mozilla.org/media/js/libs/jquery.cycle.js"></script>
 <script src="https://developer.mozilla.org/media/js/libs/slideshow.js"></script>
 <script src="https://developer.mozilla.org/media/js/libs/video-player.js"></script>
-<script src="https://developer.mozilla.org/media/js/libs/jquery.simplemodal.1.4.1.min.js"></script>
+                  <script type="text/javascript">
+        // Event tracking for the new menu
+        $(function() {
+          $('#nav-main').on('click', 'a', function(e) {
+            window._gaq && _gaq.push(['_trackEvent', 'Menu', 'Click', e.target.innerHTML, e.target.href]);
+          });
+        });
+      </script>
   
-  <script type="text/javascript">
-    // Event tracking for the new menu
-    $(function() {
-      $('#nav-main').on('click', 'a', function(e) {
-        window._gaq && _gaq.push(['_trackEvent', 'Menu', 'Click', e.target.innerHTML, e.target.href]);
-      });
-    });
-  </script>
-    <script src="https://developer.mozilla.org/media/js/libs/jquery.simplemodal.1.4.1.min.js"></script>
-<script src="https://developer.mozilla.org/media/js/libs/jqueryui.min.js"></script>
+      <script src="https://developer.mozilla.org/media/js/libs/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
 <script src="https://developer.mozilla.org/media/js/moz-jquery-plugins.js"></script>
 <script src="https://developer.mozilla.org/media/js/main.js"></script>
 <script src="https://developer.mozilla.org/media/js/wiki.js"></script>
-<script src="https://developer.mozilla.org/media/js/libs/tag-it.js"></script>
-<script src="https://developer.mozilla.org/media/js/wiki-tags-edit.js"></script>
+
 
 <script async src="https://developer.mozilla.org/en-US/waffles.js" type="text/javascript"></script>
 
-</body></html>
+
+
+
+
+ </body></html>
