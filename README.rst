@@ -27,7 +27,7 @@ Readthedocs
 -----------
 
 Add a pip requirements file to your project and have the following
-packages listed there:
+packages listed there::
 
     Sphinx
     mdn-sphinx-theme
