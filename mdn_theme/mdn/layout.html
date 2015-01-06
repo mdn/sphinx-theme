@@ -1,4 +1,4 @@
-<!DOCTYPE html><html class="redesign no-js" dir="ltr" id="developer-mozilla-org" lang="en-US"><head prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html><html class="redesign no-js" dir="ltr" lang="en-US"><head prefix="og: http://ogp.me/ns#">
   <meta charset="utf-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
@@ -9,89 +9,106 @@
   <link href="https://developer.mozilla.org/" rel="home"></link>
   <link href="https://developer.mozilla.org/#copyright" rel="copyright"></link>
 
-  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet"></link>
-      <link href="https://developer.mozilla.org/media/css/fonts.css?build=1390332500" media="all" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/css/libs/font-awesome/css/font-awesome.css?build=1390340144" media="all" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/redesign/css/main.css?build=1396039851" media="all" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/redesign/css/badges.css?build=1396039851" media="all" rel="stylesheet"></link>
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" type="text/css"></link>
+      <link href="https://developer.mozilla.org/media/redesign/css/font-awesome.css?build=1419958282" media="all" rel="stylesheet"></link>
+<link href="https://developer.mozilla.org/media/redesign/css/main.css?build=1419958283" media="all" rel="stylesheet"></link>
+<link href="https://developer.mozilla.org/media/redesign/css/badges.css?build=1419958279" media="all" rel="stylesheet"></link>
+
       
   <!-- common social tags -->
-  <meta content="website" property="og:type">
+    <meta content="website" property="og:type">
   <meta content="http://testserver/media/redesign/img/opengraph-logo.png" property="og:image">
   <meta content="Mozilla Developer Network" property="og:site_name">
   <meta content="summary" name="twitter:card">
   <meta content="http://testserver/media/redesign/img/opengraph-logo.png" name="twitter:image">
-  <meta content="@mozhacks" name="twitter:site">
-  <meta content="@mozhacks" name="twitter:creator">
+  <meta content="@NewOnMDN" name="twitter:site">
+  <meta content="@NewOnMDN" name="twitter:creator">
 
   <link href="https://developer-local.allizom.org/en-US/search/xml" rel="search" title="Mozilla Developer Network" type="application/opensearchdescription+xml"></link>
 
-  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <!-- third-generation iPad with high-resolution Retina display: -->
   <link href="https://developer.mozilla.org/media/redesign/img/favicon144.png" rel="apple-touch-icon-precomposed" sizes="144x144"></link>
-  <!-- For iPhone with high-resolution Retina display: -->
+  <!-- iPhone with high-resolution Retina display: -->
   <link href="https://developer.mozilla.org/media/redesign/img/favicon114.png" rel="apple-touch-icon-precomposed" sizes="114x114"></link>
-  <!-- For first- and second-generation iPad: -->
+  <!-- first- and second-generation iPad: -->
   <link href="https://developer.mozilla.org/media/redesign/img/favicon72.png" rel="apple-touch-icon-precomposed" sizes="72x72"></link>
-  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
   <link href="https://developer.mozilla.org/media/redesign/img/favicon57.png" rel="apple-touch-icon-precomposed"></link>
-  <!-- Basic favicon -->
-  <link href="https://developer.mozilla.org/media/redesign/img/favicon32.png" rel="shortcut icon"></link>
-
+  <!-- basic favicon -->
+          <link href="https://developer.mozilla.org/media/redesign/img/favicon32-local.png" rel="shortcut icon"></link>
   <!--[if IE]>
   <meta http-equiv="imagetoolbar" content="no">
   <script src="/media/js/libs/html5.js"></script>
   <![endif]-->
 
-    <link href="https://developer.mozilla.org/media/redesign/css/wiki.css?build=1396039851" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/media/redesign/css/sphinx.css?build=1396039851" media="screen,projection,tv" rel="stylesheet"></link>
+    <link href="https://developer.mozilla.org/media/redesign/css/wiki.css?build=1419958287" media="screen,projection,tv" rel="stylesheet"></link>
+<link href="https://developer.mozilla.org/media/redesign/css/sphinx.css?build=1419958285" media="screen,projection,tv" rel="stylesheet"></link>
 
   </head>
-<body class="html-ltr ">
+<body class="">
 
   <script type="text/javascript">
-      // This represents the site configuration
-  window.mdn = {
-    build: 'c37aa4d',
-    // Properties and settings for CKEditor will go here
-    ckeditor: {},
-    // Feature test results and methods will be placed here
-    features: {},
-    // Ensures gettext always returns something, is always set
-    gettext: function(x) { return x; },
-    // The path to media (images, CSS, JS) in MDN
-    mediaPath: '/media/',
-    // Wiki-specific settings will be placed here
-    wiki: {
-      autosuggestTitleUrl: '/docs/get-documents'
-    }
-  };
+    (function(win) {
+        'use strict';
+
+                
+        // This represents the site configuration
+        win.mdn = {
+            build: 'dev',
+            // Properties and settings for CKEditor will go here
+            ckeditor: {},
+            // Feature test results and methods will be placed here
+            features: {},
+            // The path to media (images, CSS, JS) in MDN
+            mediaPath: '/media/',
+            // Optimizely API
+            optimizely: win['optimizely'] || [],
+            // Site notifications
+                        notifications: [],
+                        // Wiki-specific settings will be placed here
+            wiki: {
+                autosuggestTitleUrl: '/docs/get-documents'
+            },
+            searchFilters: [{"name": "Document type", "slug": "type", "order": 1, "filters": [{"name": "Tools", "slug": "tools", "shortcut": null}, {"name": "Code Samples", "slug": "code", "shortcut": null}, {"name": "How-To & Tutorial", "slug": "howto", "shortcut": null}]}, {"name": "Skill level", "slug": "skill", "order": 1, "filters": [{"name": "I'm an Expert", "slug": "advanced", "shortcut": null}, {"name": "Intermediate", "slug": "intermediate", "shortcut": null}, {"name": "I'm Learning", "slug": "beginner", "shortcut": null}]}, {"name": "Topics", "slug": "topic", "order": 1, "filters": [{"name": "Open Web Apps", "slug": "apps", "shortcut": null}, {"name": "HTML", "slug": "html", "shortcut": null}, {"name": "CSS", "slug": "css", "shortcut": null}, {"name": "JavaScript", "slug": "js", "shortcut": null}, {"name": "APIs and DOM", "slug": "api", "shortcut": null}, {"name": "Canvas", "slug": "canvas", "shortcut": null}, {"name": "SVG", "slug": "svg", "shortcut": null}, {"name": "MathML", "slug": "mathml", "shortcut": null}, {"name": "WebGL", "slug": "webgl", "shortcut": null}, {"name": "XUL", "slug": "xul", "shortcut": null}, {"name": "Marketplace", "slug": "marketplace", "shortcut": null}, {"name": "Firefox", "slug": "firefox", "shortcut": null}, {"name": "Firefox for Android", "slug": "firefox-mobile", "shortcut": null}, {"name": "Firefox for Desktop", "slug": "firefox-desktop", "shortcut": null}, {"name": "Firefox OS", "slug": "firefox-os", "shortcut": null}, {"name": "Mobile", "slug": "mobile", "shortcut": null}, {"name": "Web Development", "slug": "webdev", "shortcut": null}, {"name": "Add-ons & Extensions", "slug": "addons", "shortcut": null}, {"name": "Games", "slug": "games", "shortcut": null}]}]
+        };
+
+        // Ensures gettext always returns something, is always set
+        win.gettext = function(x) {
+            return x;
+        }
+    })(window);
 </script>
   
 
   
+
+  
   <ul id="nav-access">
-    <li><a href="https://developer.mozilla.org/#content">Skip to main content</a></li>
+    <li><a href="https://developer.mozilla.org/#content" id="skip-main">Skip to main content</a></li>
     <li><a href="https://developer.mozilla.org/#language" id="skip-language">Select language</a></li>
       </ul>
 
   <!-- Header -->
   <header id="main-header"><div class="center">
 
-    <div class="clear header-login">
-      <a href="//www.mozilla.org/" id="tabzilla">mozilla</a>
-          </div>
+    <a class="no-track" data-infobar="update" href="//www.mozilla.org/" id="tabzilla">mozilla</a>
+
+    <div class="clear header-clear"></div>
 
     <a class="logo" href="https://developer.mozilla.org/">Mozilla Developer Network</a>
+
+    <div class="header-login">
+            </div>
 
     <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Zones<i aria-hidden="true" class="icon-caret-down"></i></a>
 
         <div class="submenu submenu-single" id="nav-zones-submenu">
           <div class="submenu-column">
             <ul>
-              <li><a href="https://developer.mozilla.org/en-US/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Apps">App Center</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Firefox">Firefox</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/Marketplace">Firefox Marketplace</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Marketplace">Firefox Marketplace</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Firefox_OS">Firefox OS</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Persona">Persona</a></li>
             </ul>
@@ -108,7 +125,7 @@
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/Apps">Apps</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Apps</a></li>
               <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
             </ul>
           </div><div class="submenu-column last">
@@ -123,11 +140,11 @@
             </ul>
           </div>
         </div>
-      </li><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_Program">Developer Program</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Tools</a></li><li><a href="https://developer.mozilla.org/demos/">Demos</a></li></ul></nav>
+      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Tools</a></li><li><a href="https://developer.mozilla.org/demos/">Demos</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Connect">Connect</a></li><li class="nav-search-link"><a href="https://developer.mozilla.org/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li></ul></nav>
   </div></header>
 
   <!-- Content will go here -->
-  <main id="content" role="main"><div class="center clear">
+  <main id="content"><div class="center clear">
   
     <!-- left crumb navigation -->
     <nav class="crumbs" role="navigation"><ol><li class="crumb"><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></li><li class="crumb">{{ title }}</li></ol></nav>
@@ -164,25 +181,28 @@
   </div></footer>
 
   <!-- site js -->
-    <script src="https://developer.mozilla.org/jsi18n/build:c37aa4d"></script>
-        <!--[if lte IE 8]><script src="/media/redesign/js/libs/selectivizr-1.0.2/selectivizr-build.js?build=c37aa4d"></script><div id="feature-test-old-ie"></div><![endif]-->
+    <script src="https://developer.mozilla.org/jsi18n/build:dev"></script>
+  
+      <!--[if lte IE 8]><script src="/media/js/libs/selectivizr-1.0.2/selectivizr-build.js"></script><![endif]-->
 
-          <script src="https://developer.mozilla.org/media/js/libs/jquery-1.9.1.js?build=1389975645"></script>
+    <script src="https://login.persona.org/include.js"></script>
+<form action="https://developer.mozilla.org/users/persona/signin" data-csrf-token-url="/users/persona/csrf" data-request='{"siteName": "Mozilla Developer Network", "siteLogo": "/media/redesign/img/opengraph-logo.png"}' id="_persona_login" method="post">
+  <input id="_persona_csrf_token" name="csrfmiddlewaretoken" type="hidden" value="">
+  <input id="_persona_next_url" name="next" type="hidden" value="">
+  <input id="_persona_process" name="process" type="hidden" value="">
+  <input id="_persona_assertion" name="assertion" type="hidden">
+
+
+    <script src="https://developer.mozilla.org/media/js/libs/jquery-2.1.0.js?build=1416613147"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/components.js?build=1416613147"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/analytics.js?build=1416613147"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/main.js?build=1418220288"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/auth.js?build=1416613147"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/badges.js?build=1416613147"></script>
+
     
-    <script src="https://developer.mozilla.org/media/js/jquery-upgrade-compat.js?build=1396023457"></script>
-<script src="https://developer.mozilla.org/media/redesign/js/components.js?build=1396023457"></script>
-<script src="https://developer.mozilla.org/media/redesign/js/analytics.js?build=1396270077"></script>
-<script src="https://developer.mozilla.org/media/redesign/js/main.js?build=1396270077"></script>
-<script src="https://developer.mozilla.org/media/redesign/js/badges.js?build=1396023457"></script>
-
-          <script>
-        mdn.analytics.trackOutboundLinks($('body'));
-      </script>
-    
-    <script async src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
-
       
-      <script src="https://developer.mozilla.org/media/redesign/js/search.js?build=1396023457"></script>
-<script src="https://developer.mozilla.org/media/redesign/js/wiki.js?build=1396023457"></script>
+      <script src="https://developer.mozilla.org/media/redesign/js/search-navigator.js?build=1416613147"></script>
+<script src="https://developer.mozilla.org/media/redesign/js/wiki.js?build=1419369936"></script>
 
-</body></html>
+</form></body></html>
