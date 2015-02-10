@@ -1,8 +1,8 @@
-Mozilla sphinx's theme
-======================
+Mozilla Developer Network Sphinx theme
+======================================
 
-This is a version of the Mozilla Developer Network theme, for `the Sphinx documentation
-engine. <http://sphinx.pocoo.org>`_.
+This is a version of the Mozilla Developer Network theme, for
+`the Sphinx documentation engine. <http://sphinx.pocoo.org>`_.
 
 Here is how I use it
 --------------------
