@@ -1,6 +1,6 @@
 import os
 
-__version__ = '2015.2'
+__version__ = '2015.2.1'
 
 here = os.path.dirname(__file__)
 
