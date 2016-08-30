@@ -1,8 +1,9 @@
-Mozilla Developer Network Sphinx theme
+Mozilla Developer Network Sphinx Theme
 ======================================
 
 This is a version of the Mozilla Developer Network theme, for
-`the Sphinx documentation engine. <http://sphinx.pocoo.org>`_.
+the `Sphinx documentation engine`_. It is used for the
+`Kuma development documentation`_.
 
 Here is how I use it
 --------------------
@@ -34,3 +35,6 @@ packages listed there::
 
 Then configure your Readthedocs project to use that requirement file
 before rendering your project's documentation.
+
+.. _`Sphinx documentation engine`: http://www.sphinx-doc.org/en/stable/
+.. _`Kuma development documentation`: https://kuma.readthedocs.io/en/latest/

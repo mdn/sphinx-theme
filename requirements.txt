@@ -1,0 +1,6 @@
+# Quality checks for the distribution files
+check-manifest==0.33
+pyroma==2.0.2
+
+# Build a wheel
+wheel==0.24.0
