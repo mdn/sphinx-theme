@@ -1,56 +1,56 @@
-<!DOCTYPE html><html class="redesign no-js" dir="ltr" lang="en-US"><head prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html>
+<html data-ffo-opensanslight="false" data-ffo-opensans="false" lang="en-US" dir="ltr" class="redesign no-js"><head>
   <meta charset="utf-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
-    <title>{{ docstitle|e }} &amp;mdash; MDN</title>
+  
+  <title>{{ docstitle }} - MDN</title>
 
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="index, follow" name="robots">
-  <link href="https://developer.mozilla.org/" rel="home"></link>
-  <link href="https://developer.mozilla.org/#copyright" rel="copyright"></link>
 
-      <link href="https://developer.mozilla.org/static/styles/font-awesome.css" media="all" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/static/styles/main.css" media="all" rel="stylesheet"></link>
+  
+    <link type="text/css" href="https://developer.mozilla.org/static/build/styles/mdn.65be1fdadb40.css" rel="stylesheet"></link>
 
-  <!-- common social tags -->
-    <meta content="website" property="og:type">
-  <meta content="http://testserver/static/img/opengraph-logo.png" property="og:image">
-  <meta content="Mozilla Developer Network" property="og:site_name">
-  <meta content="summary" name="twitter:card">
-  <meta content="http://testserver/static/img/opengraph-logo.png" name="twitter:image">
-  <meta content="@NewOnMDN" name="twitter:site">
-  <meta content="@NewOnMDN" name="twitter:creator">
-
-  <link href="https://developer-local.allizom.org/en-US/search/xml" rel="search" title="Mozilla Developer Network" type="application/opensearchdescription+xml"></link>
+    
+  
 
   <!-- third-generation iPad with high-resolution Retina display: -->
-  <link href="https://developer.mozilla.org/static/img/favicon144.png" rel="apple-touch-icon-precomposed" sizes="144x144"></link>
+  <link href="https://developer.mozilla.org/static/img/favicon144.a6e4162070f4.png" rel="apple-touch-icon-precomposed" sizes="144x144"></link>
   <!-- iPhone with high-resolution Retina display: -->
-  <link href="https://developer.mozilla.org/static/img/favicon114.png" rel="apple-touch-icon-precomposed" sizes="114x114"></link>
+  <link href="https://developer.mozilla.org/static/img/favicon114.0e9fabd44f85.png" rel="apple-touch-icon-precomposed" sizes="114x114"></link>
   <!-- first- and second-generation iPad: -->
-  <link href="https://developer.mozilla.org/static/img/favicon72.png" rel="apple-touch-icon-precomposed" sizes="72x72"></link>
+  <link href="https://developer.mozilla.org/static/img/favicon72.8ff9d87c82a0.png" rel="apple-touch-icon-precomposed" sizes="72x72"></link>
   <!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-  <link href="https://developer.mozilla.org/static/img/favicon57.png" rel="apple-touch-icon-precomposed"></link>
+  <link href="https://developer.mozilla.org/static/img/favicon57.a2490b9a2d76.png" rel="apple-touch-icon-precomposed"></link>
   <!-- basic favicon -->
-          <link href="https://developer.mozilla.org/static/img/favicon32-local.png" rel="shortcut icon"></link>
+  
+    
+  
+  <link href="https://developer.mozilla.org/static/img/favicon32.e02854fdcf73.png" rel="shortcut icon"></link>
   <!--[if IE]>
   <meta http-equiv="imagetoolbar" content="no">
-  <script src="/static/js/libs/html5.js"></script>
+  <script type="text/javascript" src="https://developer.mozilla.org/static/build/js/html5shiv.3948ccddab6f.js" charset="utf-8"></script>
   <![endif]-->
 
-    <link href="https://developer.mozilla.org/static/styles/wiki.css" media="screen,projection,tv" rel="stylesheet"></link>
-<link href="https://developer.mozilla.org/static/styles/sphinx.css" media="screen,projection,tv" rel="stylesheet"></link>
+  <link type="text/css" href="https://developer.mozilla.org/static/build/styles/sphinx.6b9e59817919.css" rel="stylesheet"></link>
 
-  </head>
+
+  
+</head>
 <body class="">
 
   <script type="text/javascript">
     (function(win) {
         'use strict';
 
+        
+
+        // This needs to be set before ckeditor.js loads
+        window.CKEDITOR_BASEPATH = '/static/js/libs/ckeditor/build/ckeditor/';
+
         // This represents the site configuration
         win.mdn = {
-            build: 'dev',
             // Properties and settings for CKEditor will go here
             ckeditor: {},
             // Feature test results and methods will be placed here
@@ -60,25 +60,35 @@
             // Optimizely API
             optimizely: win['optimizely'] || [],
             // Site notifications
-                        notifications: [],
-                        // Wiki-specific settings will be placed here
+            
+            notifications: [],
+            
+            // Wiki-specific settings will be placed here
             wiki: {
                 autosuggestTitleUrl: '/docs/get-documents'
             },
-            searchFilters: [{"name": "Document type", "slug": "type", "order": 1, "filters": [{"name": "Tools", "slug": "tools", "shortcut": null}, {"name": "Code Samples", "slug": "code", "shortcut": null}, {"name": "How-To & Tutorial", "slug": "howto", "shortcut": null}]}, {"name": "Skill level", "slug": "skill", "order": 1, "filters": [{"name": "I'm an Expert", "slug": "advanced", "shortcut": null}, {"name": "Intermediate", "slug": "intermediate", "shortcut": null}, {"name": "I'm Learning", "slug": "beginner", "shortcut": null}]}, {"name": "Topics", "slug": "topic", "order": 1, "filters": [{"name": "Open Web Apps", "slug": "apps", "shortcut": null}, {"name": "HTML", "slug": "html", "shortcut": null}, {"name": "CSS", "slug": "css", "shortcut": null}, {"name": "JavaScript", "slug": "js", "shortcut": null}, {"name": "APIs and DOM", "slug": "api", "shortcut": null}, {"name": "Canvas", "slug": "canvas", "shortcut": null}, {"name": "SVG", "slug": "svg", "shortcut": null}, {"name": "MathML", "slug": "mathml", "shortcut": null}, {"name": "WebGL", "slug": "webgl", "shortcut": null}, {"name": "XUL", "slug": "xul", "shortcut": null}, {"name": "Marketplace", "slug": "marketplace", "shortcut": null}, {"name": "Firefox", "slug": "firefox", "shortcut": null}, {"name": "Firefox for Android", "slug": "firefox-mobile", "shortcut": null}, {"name": "Firefox for Desktop", "slug": "firefox-desktop", "shortcut": null}, {"name": "Firefox OS", "slug": "firefox-os", "shortcut": null}, {"name": "Mobile", "slug": "mobile", "shortcut": null}, {"name": "Web Development", "slug": "webdev", "shortcut": null}, {"name": "Add-ons & Extensions", "slug": "addons", "shortcut": null}, {"name": "Games", "slug": "games", "shortcut": null}]}]
+            // Assets that need to be dynamically injected
+            assets: {
+                css: {
+                    'editor-content': ['/static/build/styles/editor-content.cdc2a41387bb.css',],
+                    'wiki-compat-tables': ['/static/build/styles/wiki-compat-tables.f3a3bfce97a1.css',]
+                },
+                js: {
+                    'syntax-prism': ['/static/build/js/syntax-prism.7a66ddfa68bf.js',],
+                    'wiki-compat-tables': ['/static/build/js/wiki-compat-tables.14ce5dcb2c3d.js',]
+                }
+            }
         };
-
-        // Ensures gettext always returns something, is always set
-        win.gettext = function(x) {
-            return x;
-        }
-    })(window);
+    })(this);
 </script>
+
+  
+
+  
 
   <ul id="nav-access">
     <li><a href="https://developer.mozilla.org/#content" id="skip-main">Skip to main content</a></li>
-    <li><a href="https://developer.mozilla.org/#language" id="skip-language">Select language</a></li>
-      </ul>
+  </ul>
 
   <!-- Header -->
   <header id="main-header"><div class="center">
@@ -89,76 +99,100 @@
 
     <div class="clear header-clear"></div>
 
-    <a class="logo" href="https://developer.mozilla.org/">Mozilla Developer Network</a>
 
-    <div class="header-login">
-            </div>
+    <a href="https://developer.mozilla.org/" class="logo">Mozilla Developer Network</a>
 
-    <nav id="main-nav" role="navigation"><ul><li><a href="https://developer.mozilla.org/en-US/docs/Zones">Zones<i aria-hidden="true" class="icon-caret-down"></i></a>
 
-        <div class="submenu submenu-single" id="nav-zones-submenu">
-          <div class="submenu-column">
-            <ul>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons">Add-ons</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Apps">App Center</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Firefox">Firefox</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Marketplace">Firefox Marketplace</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Firefox_OS">Firefox OS</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Persona">Persona</a></li>
-            </ul>
-          </div>
-        </div>
-      </li><li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Platform<i aria-hidden="true" class="icon-caret-down"></i></a>
+    <div id="nav-sec">
+        
+    </div>
 
-        <div class="submenu" id="nav-platform-submenu">
+    <nav role="navigation" id="main-nav"><ul><li><a href="https://developer.mozilla.org/docs/Web">Web Platform<i class="icon-caret-down" aria-hidden="true"></i></a>
+
+        <div id="nav-platform-submenu" class="submenu submenu-cols-2 js-submenu">
           <div class="submenu-column">
             <div class="title">Technologies</div>
             <ul>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/Graphics">Graphics</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/API">APIs / DOM</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Apps">Apps</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/MathML">MathML</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/HTML">HTML</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/CSS">CSS</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/JavaScript">JavaScript</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Guide/Graphics">Graphics</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/HTTP">HTTP</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/API">APIs / DOM</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Apps">Apps</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/MathML">MathML</a></li>
             </ul>
           </div><div class="submenu-column last">
             <div class="title">References &amp; Guides</div>
             <ul>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Tutorials">Tutorials</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Reference">References</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide">Developer Guides</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility">Accessibility</a></li>
-              <li><a href="https://developer.mozilla.org/demos/">Demos</a></li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web">...more docs</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Learn">Learn the Web</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Tutorials">Tutorials</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Reference">References</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Guide">Developer Guides</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web/Accessibility">Accessibility</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Games">Game development</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Web">...more docs</a></li>
             </ul>
           </div>
         </div>
-      </li><li><a href="https://developer.mozilla.org/en-US/docs/Tools">Tools</a></li><li><a href="https://developer.mozilla.org/demos/">Demos</a></li><li><a href="https://developer.mozilla.org/en-US/docs/Mozilla/Connect">Connect</a></li><li class="nav-search-link"><a href="https://developer.mozilla.org/search" title="Search"><i aria-hidden="true" class="icon-search"></i></a></li></ul></nav>
+      </li><li><a href="https://developer.mozilla.org/docs/Zones">Mozilla Docs<i class="icon-caret-down" aria-hidden="true"></i></a>
+
+        <div id="nav-zones-submenu" class="submenu js-submenu">
+          <div class="submenu-column">
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/Mozilla/Add-ons">Add-ons</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Mozilla/Firefox">Firefox</a></li>
+              <li><a href="https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions">WebExtensions</a></li>
+            </ul>
+          </div>
+        </div>
+      </li><li><a href="https://developer.mozilla.org/docs/Tools">Developer Tools</a></li><li><a href="https://developer.mozilla.org/docs/MDN/Feedback">Feedback<i class="icon-caret-down" aria-hidden="true"></i></a>
+
+        <div id="nav-contact-submenu" class="submenu js-submenu">
+          <div class="submenu-column">
+            <ul>
+                <li><a href="https://support.mozilla.org/">Get Firefox help<i class="icon-external-link" aria-hidden="true"></i></a></li>
+                <li><a href="http://stackoverflow.com/">Get web development help<i class="icon-external-link" aria-hidden="true"></i></a></li>
+            </ul>
+            <ul>
+              <li><a href="https://developer.mozilla.org/docs/MDN/Community">Join the MDN community</a></li>
+              <li><a href="https://bugzilla.mozilla.org/form.doc?bug_file_loc=http%3A//developer.mozilla.org/">Report a content problem<i class="icon-external-link" aria-hidden="true"></i></a></li>
+              <li><a href="https://bugzilla.mozilla.org/form.mdn">Report a bug<i class="icon-external-link" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </li><li class="nav-search-link"><a href="https://developer.mozilla.org/search" title="Search"><i class="icon-search" aria-hidden="true"></i></a></li></ul></nav>
   </div></header>
 
   <!-- Content will go here -->
   <main id="content"><div class="center clear">
-
-    <!-- left crumb navigation -->
-    <nav class="crumbs" role="navigation"><ol><li class="crumb"><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></li><li class="crumb">{{ title }}</li></ol></nav>
-
-  <div id="wiki-column-container">
-    <div class="column-container column-container-reverse">
-      <div class="column-strip wiki-column" id="wiki-right">
-        <!-- table of contents -->
-        <div class="toc toggleable" id="toc">
-          <a class="title toggler" href="https://developer.mozilla.org/#toc">Table of Contents<i></i></a>
-          <ol class="toggle-container">
-            {{ toctree(collapse=False) }}
-          </ol>
+  
+  <!-- left crumb navigation -->
+  <nav role="navigation" class="crumbs">
+    <ol>
+      <li class="crumb"><a href="{{ pathto(master_doc) }}">{{ docstitle }}</a></li>
+      <li class="crumb">{{ title }}</li>
+    </ol>
+  </nav>
+  <div class="page-buttons hidden"></div>
+  <div class="wiki-main-content"><div class="center">
+    <div id="wiki-column-container">
+      <div class="column-container column-container-reverse">
+        <div id="wiki-right" class="column-strip wiki-column">
+          <div class="toc toggleable" id="toc">
+            <a href="https://developer.mozilla.org/#toc" class="title toggler">Table of Contents<i></i></a>
+            <ol class="toggle-container">
+              {{ toctree(collapse=False) }}
+            </ol>
+          </div>
+        </div>
+        <div class="column-main wiki-column text-content" id="wiki-content">
+          {% block body %}{% endblock %}
         </div>
       </div>
-      <div class="column-main wiki-column text-content" id="wiki-content">
-           {% block body %}{% endblock %}
-      </div>
     </div>
-  </div>
+  </div></div>
 
   </div></main>
 
@@ -166,32 +200,38 @@
   <footer><div class="center">
     <div class="column-container">
       <div class="column-main">
-            <p>
-      © 2005-2015 Mozilla Developer Network and individual contributors<br> Content is available under a license specific to this project. · <a href="https://developer.mozilla.org/en-US/docs/Project:About">About MDN</a> · <a href="//github.com/mozilla/kuma">Contribute to the code</a> · <a href="//www.mozilla.org/en-US/privacy">Privacy policy</a>    </p>
+        
+  <p>
+    © 2005-2016 Mozilla Developer Network and individual contributors<br> Content is available under a license specific to this project. · <a href="https://developer.mozilla.org/docs/Project:About">About MDN</a> · <a href="//github.com/mozilla/kuma">Contribute to the code</a> · <a href="//www.mozilla.org/en-US/privacy">Privacy policy</a>
+  </p>
+
+        </div>
       </div>
       <div class="column-strip">
-              </div>
+        
+      </div>
     </div>
-  </div></footer>
+  </footer>
 
   <!-- site js -->
-    <!--[if lte IE 8]><script src="/static/js/libs/selectivizr-1.0.2/selectivizr-build.js"></script><![endif]-->
+  
+    <!--[if lte IE 8]><script type="text/javascript" src="https://developer.mozilla.org/static/build/js/selectivizr.091e18cf669b.js" charset="utf-8"></script><![endif]-->
 
-    <script src="https://login.persona.org/include.js"></script>
-<form action="https://developer.mozilla.org/users/persona/signin" data-csrf-token-url="/users/persona/csrf" data-request='{"siteName": "Mozilla Developer Network", "siteLogo": "/static/img/opengraph-logo.png"}' id="_persona_login" method="post">
-  <input id="_persona_csrf_token" name="csrfmiddlewaretoken" type="hidden" value="">
-  <input id="_persona_next_url" name="next" type="hidden" value="">
-  <input id="_persona_process" name="process" type="hidden" value="">
-  <input id="_persona_assertion" name="assertion" type="hidden">
+    <form data-csrf-token-url="/users/persona/csrf" data-persona-script="https://login.persona.org/include.js" method="post" data-request='{"siteName": "Mozilla Developer Network", "siteLogo": "/static/img/opengraph-logo.png"}' id="_persona_login" action="https://developer.mozilla.org/users/persona/signin">
+  <input type="hidden" id="_persona_csrf_token" value="" name="csrfmiddlewaretoken">
+  <input type="hidden" id="_persona_next_url" value="" name="next">
+  <input type="hidden" id="_persona_process" value="" name="process">
+  <input type="hidden" id="_persona_assertion" name="assertion">
+</form>
 
 
-<script src="https://developer.mozilla.org/static/js/libs/jquery-2.1.0.js"></script>
-<script src="https://developer.mozilla.org/static/js/components.js"></script>
-<script src="https://developer.mozilla.org/static/js/analytics.js"></script>
-<script src="https://developer.mozilla.org/static/js/main.js"></script>
-<script src="https://developer.mozilla.org/static/js/auth.js"></script>
-<script src="https://developer.mozilla.org/static/js/badges.js"></script>
-<script src="https://developer.mozilla.org/static/js/search-navigator.js"></script>
-<script src="https://developer.mozilla.org/static/js/wiki.js"></script>
+    <script type="text/javascript" charset="utf-8" src="https://developer.mozilla.org/static/build/js/main.a7b27a25fb9c.js"></script>
+    
+    
+    <script type="text/javascript" src="https://developer.mozilla.org/static/jsi18n/en-us/javascript.b28203373cc1.js"></script>
+  
 
-</form></body></html>
+  <script type="text/javascript" charset="utf-8" src="https://developer.mozilla.org/static/build/js/wiki.eecc8b9caafa.js" async></script>
+
+
+</body></html>

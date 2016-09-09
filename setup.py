@@ -28,4 +28,16 @@ setup(
     zip_safe=False,
     include_package_data=True,
     install_requires=['sphinx'],
+    url='https://github.com/mdn/sphinx-theme',
+    license='MPL 2.0',
+    keywords='sphinx extension theme mdn',
+    classifiers=[
+        'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2.7',
+        'Topic :: Documentation',
+        'Topic :: Software Development :: Documentation',
+    ]
 )
