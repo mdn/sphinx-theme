@@ -32,7 +32,7 @@ setup(
     license='MPL 2.0',
     keywords='sphinx extension theme mdn',
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
+        'Development Status :: 7 - Inactive',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)',
         'Operating System :: OS Independent',
